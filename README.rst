@@ -2,7 +2,7 @@
 django-unihandecodejs
 =====================
 
-A Django app that simply provides unihandecode.js (https://github.com/ojii/unihandecode.js) out of box to be used along side with Django CMS. 
+A Django app that simply provides unihandecode.js (https://github.com/ojii/unihandecode.js) out of box to be used along side with Django CMS.
 
 Installation
 ============
@@ -17,7 +17,7 @@ To get started using ``django-unihandecodejs``:
 
     INSTALLED_APPS = (
         ...
-        'django_unihandecodejs',
+        'unihandecodejs',
         ...
     )
 
@@ -30,7 +30,7 @@ Most people just need unihandecode.js for their Django CMS project as they have 
 
 Since this app is mainly used for Django CMS project, please refer to http://docs.django-cms.org/en/latest/reference/configuration.html#unicode-support-for-automated-slugs for configuration. For the impatient, just add the below lines into your settings.py::
 
-	CMS_UNIHANDECODE_HOST = '%sunihandecode/' % STATIC_URL
+	CMS_UNIHANDECODE_HOST = '%sunihandecodejs/' % STATIC_URL
 
 	CMS_UNIHANDECODE_VERSION = '1.0.0'
 
